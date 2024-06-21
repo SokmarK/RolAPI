@@ -6,7 +6,7 @@ const conectarDB = async () => {
         await moongose.connect(process.env.MONGO_DB,)
         console.log('DB Conectada');
     } catch (error) {
-        console.log(error);
+        console.log("HUBO UN ERROR AAAAAAAAAAAAAAAAAAAAA", error);
     }
 }
 
