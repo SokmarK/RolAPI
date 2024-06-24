@@ -27,7 +27,9 @@
 
 #borde_registro{
 	border: 2px solid var(--color-borde);
-	padding: 0px 12px 12px 12px;
+	border-top-left-radius:170px ;
+	border-top-right-radius:170px ;
+	padding: 70px 25px 12px 25px;
 }
 
 .form_margin_registro{
@@ -42,9 +44,32 @@
 }
 
 #btn-registro{
-	margin-left: 25%;
+	margin-left: 32%;
 	color: var(--color-texto);
 	padding: 5px 10px 10px 10px;
 	text-decoration: none;
-	
+	border-top-left-radius: 50px;
+	border-top-right-radius: 50px;
+	border-bottom-left-radius: 50px;
+	border-bottom-right-radius: 50px;
+}
+
+input {
+	padding: 10px 100px 10px 10px;
+	border-top-left-radius: 50px;
+	border-top-right-radius: 50px;
+	border-bottom-left-radius: 50px;
+	border-bottom-right-radius: 50px;
+}
+
+.borde-radius {
+	padding: 10px;
+	border-top-left-radius: 50px;
+	border-top-right-radius: 50px;
+	border-bottom-left-radius: 50px;
+	border-bottom-right-radius: 50px;
+}
+
+select {
+	padding-bottom: 10px;
 }

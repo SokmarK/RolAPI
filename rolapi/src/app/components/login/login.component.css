@@ -24,13 +24,16 @@
 	display: flex;
 	background-color: transparent;
 	margin-top: 100px;
-	margin-left: 40%;
+	margin-left: 35%;
 }
 
 #borde-login{
 	border: 2px solid var(--color-borde);
-	padding: 2px;
-	padding:30px;
+	padding:50px;
+	border-top-left-radius:100px ;
+	border-top-right-radius:100px;
+	border-bottom-left-radius:100px;
+	border-bottom-right-radius:100px;
 }
 
 .class_login {
@@ -54,12 +57,27 @@ p{
 	color:var(--color-botton-text);
 }
 
+.btn-inicio-sesion {
+	border-top-left-radius: 50px;
+	border-top-right-radius: 50px;
+	border-bottom-left-radius: 50px;
+	border-bottom-right-radius: 50px;
+}
+
 .separacion-btn{
-	margin-left: 58px;
+	margin-left: 53px;
+	border-top-left-radius: 50px;
+	border-top-right-radius: 50px;
+	border-bottom-left-radius: 50px;
+	border-bottom-right-radius: 50px;
 }
 
 input {
-	padding: 5px 100px 5px 0;
+	padding: 5px 100px 5px 10px;
+	border-top-left-radius: 50px;
+	border-top-right-radius: 50px;
+	border-bottom-left-radius: 50px;
+	border-bottom-right-radius: 50px;
 }
 
 
