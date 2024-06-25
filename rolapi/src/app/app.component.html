@@ -1,5 +1,13 @@
-<app-side-bar-scroll></app-side-bar-scroll>
+<section>
 
+    <div id="div-card" class="row">
+        <div class="col-3 scroll-sidebar">
+            <app-side-bar-scroll></app-side-bar-scroll>
+        </div>
+        <div class="col-9 scroll-body">
+            <router-outlet />
+        </div>
+    </div>
 
+</section>
 
-<router-outlet />
