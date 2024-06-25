@@ -1,0 +1,31 @@
+*{
+    overflow: hidden;
+}
+
+.body-grilla{
+width: 60%;
+height: 50pc;
+margin-top:10%;
+background-color: #000000bd;
+border-radius: 70px ;
+}
+
+
+.container-largo{
+   height: 34pc;
+   background-color: #D9D9D9;
+   border-radius: 45px;
+}
+
+
+.color-card{
+   background-color: #D9D9D9;
+   border-radius: 45px;
+}
+
+.card-1{
+   border-radius: 35px;
+}
+
+
+
