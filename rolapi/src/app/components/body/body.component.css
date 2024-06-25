@@ -1,3 +1,7 @@
+*{
+    overflow: hidden;
+}
+
 .body-grilla{
 width: 60%;
 height: 50pc;
@@ -22,3 +26,6 @@ border-radius: 70px ;
 .card-1{
    border-radius: 35px;
 }
+
+
+
