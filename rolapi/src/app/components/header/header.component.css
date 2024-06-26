@@ -23,3 +23,8 @@ header a {
 header a:hover {
     background-color: #ddd;
 }
+
+#logo-musica {
+    width: 100px ;
+    height: 100px ;
+}
