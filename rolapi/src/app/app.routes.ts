@@ -5,6 +5,9 @@ import { ChildReggaetonComponent } from './components/child-reggaeton/child-regg
 import { ChildElectronicaComponent } from './components/child-electronica/child-electronica.component';
 import { ChildPopularComponent } from './components/child-popular/child-popular.component';
 import { ChildVallenatoComponent } from './components/child-vallenato/child-vallenato.component';
+import { LoginComponent } from './components/login/login.component';
+import { RegistroComponent } from './components/registro/registro.component';
+import { HeaderComponent } from './components/header/header.component';
 
 export const routes: Routes = [
     {path: "", component:BodyComponent},
