@@ -3,5 +3,8 @@
 .scroll-sidebar, .scroll-body{
     max-height: 100vh;
     overflow-y: auto;
+    scrollbar-width: none; /* Ocultar scrollbar en Firefox */
+    -ms-overflow-style: none; /* Ocultar scrollbar en IE y Edge */
 }
+
 
