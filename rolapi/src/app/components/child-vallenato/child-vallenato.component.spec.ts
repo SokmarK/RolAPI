@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SideBarRightComponent } from './side-bar-right.component';
+import { ChildVallenatoComponent } from './child-vallenato.component';
 
-describe('SideBarRightComponent', () => {
-  let component: SideBarRightComponent;
-  let fixture: ComponentFixture<SideBarRightComponent>;
+describe('ChildVallenatoComponent', () => {
+  let component: ChildVallenatoComponent;
+  let fixture: ComponentFixture<ChildVallenatoComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [SideBarRightComponent]
+      imports: [ChildVallenatoComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(SideBarRightComponent);
+    fixture = TestBed.createComponent(ChildVallenatoComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

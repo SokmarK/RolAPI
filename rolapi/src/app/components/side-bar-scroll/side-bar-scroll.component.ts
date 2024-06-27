@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component, ViewEncapsulation } from '@angular/core';
 import { RouterLink } from '@angular/router';
+import { OffcanvasComponent } from '../offcanvas/offcanvas.component';
 
 
 @Component({
@@ -9,7 +10,8 @@ import { RouterLink } from '@angular/router';
   imports: [
     CommonModule,
     RouterLink,
-    SideBarScrollComponent
+    SideBarScrollComponent,
+
   ],
   templateUrl: './side-bar-scroll.component.html',
   styleUrl: './side-bar-scroll.component.css'
