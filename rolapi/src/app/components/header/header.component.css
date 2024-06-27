@@ -37,3 +37,8 @@ header a:hover {
 .margenes-card {
     margin-left: 50px;
 }
+
+.p-titulo {
+    margin-left: 50%;
+    text-align: centerS;
+}
