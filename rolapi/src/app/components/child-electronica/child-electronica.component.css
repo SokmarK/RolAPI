@@ -1,0 +1,19 @@
+* {
+    overflow: hidden;
+}
+
+.body-grilla {
+    background: #111111;
+}
+
+
+.container-largo {
+    background-color: #D9D9D9;
+    /*height: fit-content;*/
+}
+
+
+.color-card {
+    background-color: #D9D9D9;
+    height: fit-content;
+}

@@ -35,7 +35,7 @@ export class ServicesService {
         return this.http.delete(`${this.urlAPI}/Borrar-Artista/${id}`)
     }
 
-    putPelicula(id: string, dataArtista: Artista) {
+    putArtista(id: string, dataArtista: Artista) {
         return this.http.put(`${this.urlAPI}/Actualizar-Artista${id}`, dataArtista)
     }
 
