@@ -12,7 +12,7 @@ import { Observable } from 'rxjs';
 export class ServicesService {
 
     urlAPI = environment.baseApiUrl
-
+    esAdmin:any = false
 
     /** Artista */
 
@@ -88,6 +88,13 @@ export class ServicesService {
         return this.http.put(`${this.urlAPI}/Actualizar-Cancion${id}`, dataMusica)
     }
 
+
+
+
+
+    verficarRol(){
+        return this.esAdmin
+    }
 
 }
 

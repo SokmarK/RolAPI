@@ -1,8 +1,7 @@
 import { Genero } from "./generos.model"
 
 export interface Musica{
-id?: string,
+_id?: string,
 nombre: string,
-duracion: string
-genero : Genero
+link: string
 }
