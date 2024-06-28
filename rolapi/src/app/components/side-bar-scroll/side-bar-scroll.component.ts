@@ -1,7 +1,8 @@
 import { CommonModule } from '@angular/common';
-import { Component, ViewEncapsulation } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { OffcanvasComponent } from '../offcanvas/offcanvas.component';
+import { ServicesService } from '../../services/services.service';
 
 
 @Component({
@@ -16,6 +17,19 @@ import { OffcanvasComponent } from '../offcanvas/offcanvas.component';
   templateUrl: './side-bar-scroll.component.html',
   styleUrl: './side-bar-scroll.component.css'
 })
-export class SideBarScrollComponent {
+export class SideBarScrollComponent implements OnInit{
+    admin:any
+    constructor(private _apiService:ServicesService){
 
+    }
+
+    ngOnInit():void{
+this.prueba()
+
+    }
+
+    prueba(){
+        this.admin = this._apiService.verficarRol()
+        console.log(this.admin);
+    }
 }
