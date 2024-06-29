@@ -5,11 +5,13 @@ import { ChildReggaetonComponent } from './components/child-reggaeton/child-regg
 import { ChildElectronicaComponent } from './components/child-electronica/child-electronica.component';
 import { ChildPopularComponent } from './components/child-popular/child-popular.component';
 import { ChildVallenatoComponent } from './components/child-vallenato/child-vallenato.component';
+import { GenerosAdminComponent } from './components/admin/generos-admin/generos-admin.component';
 
 export const routes: Routes = [
     {path: "", component:BodyComponent},
     {path: "genero-reggaeton", component:ChildReggaetonComponent},
     {path: "genero-electronica", component:ChildElectronicaComponent},
     {path: "genero-popular", component:ChildPopularComponent},
-    {path: "genero-vallenato", component:ChildVallenatoComponent}
+    {path: "genero-vallenato", component:ChildVallenatoComponent},
+    {path: "generos-admin", component: GenerosAdminComponent}
 ];
