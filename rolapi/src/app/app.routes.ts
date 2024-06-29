@@ -8,11 +8,13 @@ import { ChildVallenatoComponent } from './components/child-vallenato/child-vall
 import { LoginComponent } from './components/login/login.component';
 import { RegistroComponent } from './components/registro/registro.component';
 import { HeaderComponent } from './components/header/header.component';
+import { ArtistasAdminComponent } from './components/admin/artistas-admin/artistas-admin.component';
 
 export const routes: Routes = [
     {path: "", component:BodyComponent},
     {path: "genero-reggaeton", component:ChildReggaetonComponent},
     {path: "genero-electronica", component:ChildElectronicaComponent},
     {path: "genero-popular", component:ChildPopularComponent},
-    {path: "genero-vallenato", component:ChildVallenatoComponent}
+    {path: "genero-vallenato", component:ChildVallenatoComponent},
+    {path: "artistas-admin", component:ArtistasAdminComponent}
 ];

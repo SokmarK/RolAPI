@@ -1,8 +1,8 @@
 #btn-message {
-    --text-color: #000;
-    --bg-color-sup: #d2d2d2;
-    --bg-color: #f4f4f4;
-    --bg-hover-color: #ffffff;
+    --text-color: rgb(255, 255, 255);
+    --bg-color-sup: #5e5e5e;
+    --bg-color: #2b2b2b;
+    --bg-hover-color: #161616;
     --online-status: #00da00;
     --font-size: 16px;
     --btn-transition: all 0.2s ease-out;
@@ -188,7 +188,7 @@
     font-family: inherit;
     text-align: center;
     font-size: 13px;
-    box-shadow: 0px 14px 56px -11px       #41523f;
+    box-shadow: 0px 14px 56px -11px #41523f;
     width: 10em;
     padding: 1em;
     transition: all 0.4s;
@@ -228,17 +228,17 @@
 }
 
 #list-item-1 {
-    overflow: hidden ;
+    overflow: hidden;
 }
 
 #btn-href-1 {
     background: #41523f;
 }
 
-.color-card-settings{
+.color-card-settings {
     background: #41523f;
 }
 
-.h-imgs{
+.h-imgs {
     height: 90%;
 }
