@@ -12,7 +12,7 @@ import { Observable } from 'rxjs';
 export class ServicesService {
 
     urlAPI = environment.baseApiUrl
-    esAdmin:any = false
+    esAdmin:any = true
 
     /** Artista */
 
