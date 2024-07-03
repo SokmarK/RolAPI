@@ -1,0 +1,9 @@
+<form [formGroup]="formGenero" (ngSubmit)="enviarFormulario()">
+    <div class="mb-3">
+        <label for="txtGenero" class="form-label">Nombre del genero</label>
+        <input type="text" class="form-control" id="txtGenero" formControlName="nombre">
+    </div>
+    <div class="d-flex justify-content-end">
+        <button type="submit" class="btn btn-primary">Enviar</button>
+    </div>
+</form>
