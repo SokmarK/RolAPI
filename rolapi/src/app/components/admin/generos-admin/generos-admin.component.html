@@ -12,38 +12,35 @@
 </div>
 
 
-<table class="table">
-    <thead>
-      <tr>
-        <th scope="col">Nombre</th>
-        <th scope="col">Acciones</th>
-      </tr>
-    </thead>
-    <tbody>
-      @for (generoInfo of dataGeneros; track generoInfo._id) {
-        <tr>
-            <td>{{generoInfo.nombre}}</td>
-            <td>
-                <button>Editar</button>
-                <button>Eliminar</button>
-            </td>
-          </tr>
-      }
+@for (generoInfo of dataGeneros; track generoInfo._id) {
+    <section class="bg-white rounded-2 mt-4 d-flex  justify-content-between p-2">
 
-    </tbody>
-  </table>
+<div>
+    <p class="fs-5 m-0">{{generoInfo.nombre}}</p>
+</div>
+
+<div>
+    <button class="btn btn-info me-3" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-regular fa-pen-to-square" (click)="alimentarFormulario(generoInfo._id)"></i></button>
+    <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#eliminar" (click)="eliminarGenero(generoInfo._id)"><i class="fa-regular fa-trash-can"></i></button>
+</div>
+
+</section>
+
+    }
 
 
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <app-formulario-generos [idGenero]="idConsulta"></app-formulario-generos>
+                </div>
+            </div>
         </div>
-        <div class="modal-body">
-            <app-formulario-generos></app-formulario-generos>
-        </div>
-      </div>
     </div>
-  </div>
+
+

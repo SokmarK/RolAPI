@@ -1,31 +1,46 @@
-<div class="body-grilla ps-5 pe-5 pb-5 rounded-4 m-5">
 
-    <section class="d-flex justify-content-end align-items-center  mt-5">
+<div class="body-grilla rounded-top-4 mt-5">
 
-        <h1 class="titulo text-white">Artistas</h1>
-        <button class="button" (click)="alerta_crear()">
+    <section class="d-flex justify-content-between align-items-center  p-3">
+
+        <h1 class="titulo text-white">Géneros</h1>
+        <button class="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
             <i class="fa-solid fa-plus svg-icon w-25 fs-3"></i>
             <span class="lable"></span>
         </button>
 
     </section>
-
-
-</div>  
-
-
-
-<div class="body-grilla ps-5 pe-5 pb-5 rounded-4 m-5">
-
-    <section class="row">
-        <div class="col-8 mt-5">
-
-            <main class="row">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat in repellendus, aspernatur, ex distinctio molestias deserunt voluptas fugit officia cumque dignissimos, et sint quae corporis nam perferendis. Ipsum, neque quam?
-                Blanditiis obcaecati repudiandae enim! Officiis facere hic sint quibusdam, provident fugiat eveniet? Vero aperiam obcaecati ipsum nisi voluptatem voluptatibus, id veniam a fugiat asperiores vitae iusto laudantium, impedit possimus ratione.</p>
-            </main>
-        </div>
-
-    </section>
 </div>
+
+
+@for (generoInfo of dataGeneros; track generoInfo._id) {
+    <section class="bg-white rounded-2 mt-4 d-flex  justify-content-between p-2">
+
+<div>
+    <p class="fs-5 m-0">{{generoInfo.nombre}}</p>
+</div>
+
+<div>
+    <button class="btn btn-info me-3" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-regular fa-pen-to-square" (click)="alimentarFormulario(generoInfo._id)"></i></button>
+    <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#eliminar" (click)="eliminarGenero(generoInfo._id)"><i class="fa-regular fa-trash-can"></i></button>
+</div>
+
+</section>
+
+    }
+
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <app-formulario-generos [idGenero]="idConsulta"></app-formulario-generos>
+                </div>
+            </div>
+        </div>
+    </div>
 

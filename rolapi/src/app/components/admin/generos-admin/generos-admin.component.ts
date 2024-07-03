@@ -15,6 +15,7 @@ import { ServicesService } from '../../../services/services.service';
 export class GenerosAdminComponent {
 
     dataGeneros:any
+    idConsulta: any = ""
 
     constructor(private _apiService: ServicesService){
 
@@ -30,6 +31,35 @@ export class GenerosAdminComponent {
             console.log(this.dataGeneros)
         })
     }
+
+
+    alimentarFormulario(id: string) {
+        this.idConsulta = id
+        
+    }
+
+
+    eliminarGenero(id: string) {
+        Swal.fire({
+            title: "Esta seguro de eliminar el genero",
+            icon: "question",
+            showCancelButton: true,
+            confirmButtonColor: "#3085d6",
+            cancelButtonColor: "#d33",
+            confirmButtonText: "Eliminar",
+            cancelButtonText: "Cancelar"
+        }).then((result) => {
+            if (result.isConfirmed) {
+                this._apiService.deleteGenero(id).subscribe((data: any) => {
+                    this.consultarInfo();
+                });
+                Swal.fire({
+                    title: "Genero eliminado correctamente!",
+                });
+            }
+        });
+    }
+
 
 
 }

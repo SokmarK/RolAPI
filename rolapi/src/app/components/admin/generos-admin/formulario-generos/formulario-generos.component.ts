@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input, SimpleChanges } from '@angular/core';
 import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { ServicesService } from '../../../../services/services.service';
 import Swal from 'sweetalert2'
@@ -13,12 +13,22 @@ import Swal from 'sweetalert2'
 })
 export class FormularioGenerosComponent {
 
+    @Input() idGenero :string = "";
+
     formGenero: FormGroup
 
     constructor(private fb: FormBuilder, private _apiService: ServicesService){
         this.formGenero = this.fb.group({
             nombre: ["", [Validators.required]]
         })
+    }
+
+    ngOnChanges(changes: SimpleChanges) {
+        if (this.idGenero != '') {
+            if (changes['idGenero']) {
+                this.alimentarFormulario(changes['idGenero'].currentValue)
+            }
+        }
     }
 
     enviarFormulario(){
@@ -41,6 +51,13 @@ export class FormularioGenerosComponent {
             })
         }
 
+    }
+
+    alimentarFormulario(id : any){
+        this._apiService.getGenero(id).subscribe((data : any) => {
+            console.log(data);
+            this.formGenero.get('nombre')?.setValue(data.nombre);
+        })
     }
 
 }
