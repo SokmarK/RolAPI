@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, input } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -8,26 +8,5 @@ import { Component } from '@angular/core';
   styleUrl: './header.component.css'
 })
 export class HeaderComponent {
-
+  
 }
-
-let grilla_musica = [
-  {
-    cantante: "",
-    nombre_musica: "",
-    img: "",
-    url: "" 
-  },
-  {
-    cantante: "",
-    nombre_musica: "",
-    img: "",
-    url: ""
-  },
-  {
-    cantante: "",
-    nombre_musica: "",
-    img: "",
-    url: ""
-  }
-]

@@ -1,6 +1,7 @@
 import { Component, ElementRef, ViewChild } from '@angular/core';
 import { AuthService } from '../../services/auth.service';
 import { FormsModule } from '@angular/forms'
+import { catchError, throwError } from 'rxjs';
 
 
 @Component({
@@ -23,27 +24,49 @@ export class RegistroComponent {
     }
 
     guadarUsiarios(){
-      console.log(this.name);
-      console.log(this.lastName);
-      console.log(this.gender);
-      console.log(this.dateBirthday);
-      console.log(this.email);
-
       this.user.name = this.name;
       this.user.lastName = this.lastName
       this.user.dateBirthday = this.dateBirthday
       this.user.gender = this.gender
       this.user.email = this.email
       this.user.password = this.password
-      this.apiRegistro.guardarUsuario(this.user)
-      .subscribe(respuesta =>  console.log("ya se registro",respuesta));
+      if (this.user.email != "") {
+        this.apiRegistro.guardarUsuario(this.user)
+        .pipe( 
+          catchError(error => {
+            if(error.status === 400) {
+            
+              if(error.error.errores.errorResponse.code == 11000){
+                alert("Ya se encuentra registrado")
+              }
+              return throwError(() => new Error('Bad Request'));              
+            } else {
+              console.log('otro error', error);
+              return throwError(() => error)
+            }
+          })
+        )
+        .subscribe(respuesta => {
+          if(respuesta.status == 'creado'){
+            console.log();
+          }else{
+            console.log(respuesta.errores.errorReponse.code);
+            
+          }
+
+          
+        });
+      }else{
+        alert("email requerido")
+      }
       
-      window.alert('Ya fue registrado');
+      
 
     }
     
 }
 
+ 
 
 
 

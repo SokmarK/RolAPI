@@ -5,13 +5,13 @@
                 <p id="p_registro"><b>Registro</b></p>
                 <form #formRegistro>
                     <div class="form_margin_registro">
-                        <input type="text" name="name" placeholder="Nombres" required="" [(ngModel)]="name" />
+                        <input type="text" name="name" placeholder="Nombres" required [(ngModel)]="name" />
                     </div>
                     <div class="form_margin_registro">
-                        <input type="email" name="lastname" placeholder="Apellido" required="" [(ngModel)]="lastName" />
+                        <input type="email" name="lastname" placeholder="Apellido" required [(ngModel)]="lastName" />
                     </div>
                     <div class="form_margin_registro">
-                        <select class="form-select borde-radius" id="validationDefault04" required="" [(ngModel)]="gender" placeholder="Seleccione su genero...">
+                        <select class="form-select borde-radius" id="validationDefault04" required [(ngModel)]="gender" placeholder="Seleccione su genero...">
                             <option>Seleccione su genero...</option>
                             <option>Mujer</option>
                             <option>Hombre</option>
@@ -20,16 +20,16 @@
                         </select>                        
                     </div>
                     <div class="form_margin_registro">
-                        <input type="text" name="date" placeholder="Fecha: Dia-Mes-Año" required="" [(ngModel)]="dateBirthday" />
+                        <input type="text" name="date" placeholder="Fecha: Dia-Mes-Año" required [(ngModel)]="dateBirthday" />
                     </div>
                     <div class="form_margin_registro">
-                        <input type="email" name="email" placeholder="Correo electronico" required="" [(ngModel)]="email"/>
+                        <input type="email" name="email" placeholder="Correo electronico"  [(ngModel)]="email"/>
                     </div>
                     <div class="form_margin_registro">
-                        <input type="password" name="password" placeholder="Contraseña Nueva" required="" [(ngModel)]="password" />
+                        <input type="password" name="password" placeholder="Contraseña Nueva"  [(ngModel)]="password" />
                     </div>
                     <div class="form_margin_registro">
-                        <input type="password" name="password" placeholder="Repita la contraseña " required="" />
+                        <input type="password" name="password" placeholder="Repita la contraseña" />
                     </div>
                 </form>
                 <button id="btn-registro" (click)="guadarUsiarios()" >Registrarme</button>                

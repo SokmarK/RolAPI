@@ -54,28 +54,6 @@ header a:hover {
 }
 
 
-/* OPCION VERTICAL  */
-nav {
-    background-color: var(--color-fondo-header);
-    color: var(--color-texto-header);
-    width: 100px;
-    height: 100vh;
-    position: fixed;
-    top: 44px;
-    left: 0;
-}
-
-.menu {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.menu li {
-    padding: 15px 0;
-}
-
-.menu li a {
-    text-decoration: none;
-    color: var(--color-texto-header);
+.margin-card {
+    margin: 5% 1% 1% 2%;
 }
