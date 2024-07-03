@@ -12,11 +12,11 @@ import { ArtistasAdminComponent } from './components/admin/artistas-admin/artist
 import { GenerosAdminComponent } from './components/admin/generos-admin/generos-admin.component';
 
 export const routes: Routes = [
-    {path: "", component:BodyComponent},
-    {path: "genero-reggaeton", component:ChildReggaetonComponent},
-    {path: "genero-electronica", component:ChildElectronicaComponent},
-    {path: "genero-popular", component:ChildPopularComponent},
-    {path: "genero-vallenato", component:ChildVallenatoComponent},
-    {path: "artistas-admin", component:ArtistasAdminComponent},
-    {path: "generos-admin", component: GenerosAdminComponent}
+    { path: "", component: BodyComponent },
+    { path: "genero-reggaeton", component: ChildReggaetonComponent },
+    { path: "genero-electronica", component: ChildElectronicaComponent },
+    { path: "genero-popular", component: ChildPopularComponent },
+    { path: "genero-vallenato", component: ChildVallenatoComponent },
+    { path: "artistas-admin", component: ArtistasAdminComponent },
+    { path: "generos-admin", component: GenerosAdminComponent }
 ];

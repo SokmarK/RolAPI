@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ServicesService } from '../../../services/services.service';
 import { FormularioArtistasComponent } from './formulario-artistas/formulario-artistas.component';
 
@@ -11,7 +11,7 @@ import { FormularioArtistasComponent } from './formulario-artistas/formulario-ar
     templateUrl: './artistas-admin.component.html',
     styleUrl: './artistas-admin.component.css'
 })
-export class ArtistasAdminComponent {
+export class ArtistasAdminComponent implements OnInit {
 
     dataArtistas: any
 
