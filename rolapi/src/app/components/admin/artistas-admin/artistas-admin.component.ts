@@ -23,7 +23,7 @@ export class ArtistasAdminComponent implements OnInit {
 
 
     ngOnInit(): void {
-
+        this.consultarInfoArtista()
     }
 
 

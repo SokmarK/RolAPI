@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { FormularioGenerosComponent } from './formulario-generos/formulario-generos.component';
 import { ServicesService } from '../../../services/services.service';
+import Swal from 'sweetalert2'
 
 @Component({
     selector: 'app-generos-admin',
@@ -34,7 +35,7 @@ export class GenerosAdminComponent {
 
     alimentarFormulario(id: string) {
         this.idConsulta = id
-        
+
     }
 
 

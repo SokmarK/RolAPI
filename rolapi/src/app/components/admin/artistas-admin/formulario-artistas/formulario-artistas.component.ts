@@ -30,10 +30,7 @@ export class FormularioArtistasComponent {
 
     sendFormulario() {
         if (this.formArtista.valid) {
-
             this._apiService.postArtista(this.formArtista.value).subscribe((data: any) => {
-
-
                 Swal.fire({
                     title: 'Cree un nuevo Artista',
                     confirmButtonText: 'Crear'
@@ -41,11 +38,8 @@ export class FormularioArtistasComponent {
                 setTimeout(() => {
                     location.reload()
                 }, 3000);
-
             })
-
         } else {
-
             Swal.fire({
                 title: 'Digite el nombre del A',
                 confirmButtonText: 'Cool',
