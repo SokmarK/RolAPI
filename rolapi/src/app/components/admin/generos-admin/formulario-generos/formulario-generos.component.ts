@@ -3,13 +3,13 @@ import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angula
 import { ServicesService } from '../../../../services/services.service';
 import Swal from 'sweetalert2'
 @Component({
-  selector: 'app-formulario-generos',
-  standalone: true,
-  imports: [
-    ReactiveFormsModule
-  ],
-  templateUrl: './formulario-generos.component.html',
-  styleUrl: './formulario-generos.component.css'
+    selector: 'app-formulario-generos',
+    standalone: true,
+    imports: [
+        ReactiveFormsModule
+    ],
+    templateUrl: './formulario-generos.component.html',
+    styleUrl: './formulario-generos.component.css'
 })
 export class FormularioGenerosComponent {
 
@@ -17,7 +17,7 @@ export class FormularioGenerosComponent {
 
     formGenero: FormGroup
 
-    constructor(private fb: FormBuilder, private _apiService: ServicesService){
+    constructor(private fb: FormBuilder, private _apiService: ServicesService) {
         this.formGenero = this.fb.group({
             nombre: ["", [Validators.required]]
         })
@@ -43,7 +43,7 @@ export class FormularioGenerosComponent {
                     location.reload()
                 }, 3000);
             })
-        }else{
+        } else {
             Swal.fire({
                 title: 'Digite el nombre del genero',
                 confirmButtonText: 'Cool',
