@@ -16,36 +16,36 @@
 
 <table class="table">
     <thead>
-      <tr>
-        <th scope="col">Nombre</th>
-        <th scope="col">Acciones</th>
-      </tr>
+        <tr>
+            <th scope="col">Nombre</th>
+            <th scope="col">Acciones</th>
+        </tr>
     </thead>
     <tbody>
-      @for (generoInfo of dataGeneros; track generoInfo._id) {
+        @for (generoInfo of dataGeneros; track generoInfo._id) {
         <tr>
             <td>{{generoInfo.nombre}}</td>
             <td>
                 <button>Editar</button>
                 <button>Eliminar</button>
             </td>
-          </tr>
-      }
+        </tr>
+        }
 
     </tbody>
-  </table>
+</table>
 
 
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <app-formulario-generos></app-formulario-generos>
+            </div>
         </div>
-        <div class="modal-body">
-            <app-formulario-generos></app-formulario-generos>
-        </div>
-      </div>
     </div>
-  </div>
+</div>
