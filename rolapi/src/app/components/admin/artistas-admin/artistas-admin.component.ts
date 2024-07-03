@@ -1,22 +1,39 @@
 import { Component } from '@angular/core';
-import Swal from 'sweetalert2';
+import { ServicesService } from '../../../services/services.service';
+import { FormularioArtistasComponent } from './formulario-artistas/formulario-artistas.component';
 
 @Component({
-  selector: 'app-artistas-admin',
-  standalone: true,
-  imports: [],
-  templateUrl: './artistas-admin.component.html',
-  styleUrl: './artistas-admin.component.css'
+    selector: 'app-artistas-admin',
+    standalone: true,
+    imports: [
+        FormularioArtistasComponent
+    ],
+    templateUrl: './artistas-admin.component.html',
+    styleUrl: './artistas-admin.component.css'
 })
 export class ArtistasAdminComponent {
 
-    alerta_crear() {
-        Swal.fire({
-            title: 'Cree un nuevo género',
-            text: 'Do you want to continue',
-            confirmButtonText: 'Cool'
-        })
+    dataArtistas: any
+
+
+
+    constructor(private _apiService: ServicesService) {
+
     }
 
+
+    ngOnInit(): void {
+
+    }
+
+
+    consultarInfoArtista() {
+
+        this._apiService.getArtistas().subscribe((data: any) => {
+            this.dataArtistas = data
+            console.log(this.dataArtistas);
+
+        })
+    }
 
 }

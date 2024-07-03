@@ -27,7 +27,6 @@ export class FormularioGenerosComponent {
                 Swal.fire({
                     title: 'Cree un nuevo género',
                     confirmButtonText: 'Cool',
-                    imageUrl: "https://i.pinimg.com/originals/33/26/14/332614a362ce0ca8da3f898db0d28c24.gif",
                 })
                 setTimeout(() => {
                     location.reload()

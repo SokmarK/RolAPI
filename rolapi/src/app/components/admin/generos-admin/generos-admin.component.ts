@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import Swal from 'sweetalert2'
 import { FormularioGenerosComponent } from './formulario-generos/formulario-generos.component';
 import { ServicesService } from '../../../services/services.service';
 
