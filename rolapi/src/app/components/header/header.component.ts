@@ -10,3 +10,24 @@ import { Component } from '@angular/core';
 export class HeaderComponent {
 
 }
+
+let grilla_musica = [
+  {
+    cantante: "",
+    nombre_musica: "",
+    img: "",
+    url: "" 
+  },
+  {
+    cantante: "",
+    nombre_musica: "",
+    img: "",
+    url: ""
+  },
+  {
+    cantante: "",
+    nombre_musica: "",
+    img: "",
+    url: ""
+  }
+]

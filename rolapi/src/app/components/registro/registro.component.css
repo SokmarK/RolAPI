@@ -46,6 +46,7 @@
 #btn-registro{
 	margin-left: 32%;
 	color: var(--color-texto);
+	background-color: var(--color-botton-fondo);
 	padding: 5px 10px 10px 10px;
 	text-decoration: none;
 	border-top-left-radius: 50px;
