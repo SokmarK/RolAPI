@@ -14,13 +14,10 @@
 
 <table class="table">
     <thead>
-        <tr>
-            <th scope="col">Nombre</th>
-            <th scope="col">Acciones</th>
-        </tr>
+
     </thead>
     <tbody>
-        @for (artistaInfo of dataArtistas; track dataArtistas._id) {
+        @for (artistaInfo of dataArtistas; track $index) {
         <tr>
             <td>{{artistaInfo.nombre}}</td>
             <td>{{artistaInfo.edad}}</td>
