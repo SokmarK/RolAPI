@@ -1,4 +1,4 @@
-let Genero = require('../models/genero.model')
+let Genero = require('../models/generos.model')
 
 exports.crearGenero = async(req, res) => {
     try {
