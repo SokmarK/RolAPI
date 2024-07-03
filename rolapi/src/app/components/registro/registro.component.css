@@ -1,0 +1,75 @@
+/* REGISTRO */
+:host {
+	--color-texto:#ffff;
+	--color-botton-fondo:#0000ff;
+	--color-botton-text:#000;
+	--color-body:#1D1D1D;
+	--color-negro:#000;
+	--color-borde:#AA38A5;
+}
+
+#body-registro{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: var(--color-body);
+}
+
+.conta{
+	padding-bottom: 10px;
+	display: flex;
+	background-color: transparent;
+	margin-top: 100px;
+	margin-left: 40%;
+}
+
+#borde_registro{
+	border: 2px solid var(--color-borde);
+	border-top-left-radius:170px ;
+	border-top-right-radius:170px ;
+	padding: 70px 25px 12px 25px;
+}
+
+.form_margin_registro{
+	padding-bottom: 2%;
+}
+
+#p_registro{
+	font-family: Arial, Helvetica, sans-serif;
+	color: var(--color-texto);
+	font-weight: bold;
+	text-align: center;
+}
+
+#btn-registro{
+	margin-left: 32%;
+	color: var(--color-texto);
+	padding: 5px 10px 10px 10px;
+	text-decoration: none;
+	border-top-left-radius: 50px;
+	border-top-right-radius: 50px;
+	border-bottom-left-radius: 50px;
+	border-bottom-right-radius: 50px;
+}
+
+input {
+	padding: 10px 100px 10px 10px;
+	border-top-left-radius: 50px;
+	border-top-right-radius: 50px;
+	border-bottom-left-radius: 50px;
+	border-bottom-right-radius: 50px;
+}
+
+.borde-radius {
+	padding: 10px;
+	border-top-left-radius: 50px;
+	border-top-right-radius: 50px;
+	border-bottom-left-radius: 50px;
+	border-bottom-right-radius: 50px;
+}
+
+select {
+	padding-bottom: 10px;
+}

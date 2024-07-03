@@ -5,6 +5,10 @@ import { ChildReggaetonComponent } from './components/child-reggaeton/child-regg
 import { ChildElectronicaComponent } from './components/child-electronica/child-electronica.component';
 import { ChildPopularComponent } from './components/child-popular/child-popular.component';
 import { ChildVallenatoComponent } from './components/child-vallenato/child-vallenato.component';
+import { LoginComponent } from './components/login/login.component';
+import { RegistroComponent } from './components/registro/registro.component';
+import { HeaderComponent } from './components/header/header.component';
+import { ArtistasAdminComponent } from './components/admin/artistas-admin/artistas-admin.component';
 import { GenerosAdminComponent } from './components/admin/generos-admin/generos-admin.component';
 
 export const routes: Routes = [
@@ -13,5 +17,6 @@ export const routes: Routes = [
     {path: "genero-electronica", component:ChildElectronicaComponent},
     {path: "genero-popular", component:ChildPopularComponent},
     {path: "genero-vallenato", component:ChildVallenatoComponent},
+    {path: "artistas-admin", component:ArtistasAdminComponent},
     {path: "generos-admin", component: GenerosAdminComponent}
 ];
