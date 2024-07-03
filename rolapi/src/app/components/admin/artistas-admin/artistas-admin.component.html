@@ -1,0 +1,52 @@
+<div class="body-grilla rounded-top-4 mt-5">
+
+    <section class="d-flex justify-content-between align-items-center  p-3">
+
+        <h1 class="titulo text-white">Artistas</h1>
+        <button class="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <i class="fa-solid fa-plus svg-icon w-25 fs-3"></i>
+            <span class="lable"></span>
+        </button>
+
+    </section>
+</div>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Nombre</th>
+            <th scope="col">Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        @for (artistaInfo of dataArtistas; track dataArtistas._id) {
+        <tr>
+            <td>{{artistaInfo.nombre}}</td>
+            <td>{{artistaInfo.edad}}</td>
+            <td>{{artistaInfo.pais}}</td>
+            <td>{{artistaInfo.nombre_artista}}</td>
+            <td>
+                <button>Editar</button>
+                <button>Eliminar</button>
+            </td>
+        </tr>
+        }
+
+    </tbody>
+</table>
+
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <app-artistas-admin></app-artistas-admin>
+            </div>
+        </div>
+    </div>
+</div>
