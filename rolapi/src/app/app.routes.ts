@@ -18,15 +18,5 @@ export const routes: Routes = [
     },
     {
         path: 'registro', component: RegistroComponent
-    },
-    
-    // {
-    //     path: 'salsa-choke', component: SalsaChokeComponent
-    // },
-    // {
-    //     path: 'reggae', component: ReggaeComponent
-    // },
-    // {
-    //     path: 'genero-pop', component: GeneroPopComponent
-    // }
+    }
 ];

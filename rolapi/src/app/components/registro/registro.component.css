@@ -74,3 +74,9 @@ input {
 select {
 	padding-bottom: 10px;
 }
+
+#homer{
+	width: 392px;
+    margin-top: -532px;
+	margin-left: 2%;
+}
