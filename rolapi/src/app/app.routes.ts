@@ -2,9 +2,6 @@ import { Routes } from '@angular/router';
 import { LoginComponent } from './components/login/login.component';
 import { RegistroComponent } from './components/registro/registro.component';
 import { HeaderComponent } from './components/header/header.component';
-import { SalsaChokeComponent } from './components/salsa-choke/salsa-choke.component';
-import { GeneroPopComponent } from './components/genero-pop/genero-pop.component';
-import { ReggaeComponent } from './components/reggae/reggae.component';
 
 export const routes: Routes = [
     {
