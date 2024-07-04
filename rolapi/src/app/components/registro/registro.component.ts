@@ -51,10 +51,7 @@ export class RegistroComponent {
             console.log();
           }else{
             console.log(respuesta.errores.errorReponse.code);
-            
-          }
-
-          
+          }          
         });
       }else{
         alert("email requerido")
@@ -65,8 +62,6 @@ export class RegistroComponent {
     }
     
 }
-
- 
 
 
 
