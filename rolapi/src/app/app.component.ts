@@ -5,6 +5,7 @@ import { BodyComponent } from './components/body/body.component';
 import { SearchComponent } from './components/search/search.component';
 import { SideBarScrollComponent } from './components/side-bar-scroll/side-bar-scroll.component';
 import { OffcanvasComponent } from './components/offcanvas/offcanvas.component';
+import { HeaderComponent } from './components/header/header.component';
 
 @Component({
     selector: 'app-root',
@@ -14,7 +15,8 @@ import { OffcanvasComponent } from './components/offcanvas/offcanvas.component';
         BodyComponent,
         SearchComponent,
         SideBarScrollComponent,
-        OffcanvasComponent
+        OffcanvasComponent,
+        HeaderComponent
     ],
     templateUrl: './app.component.html',
     styleUrl: './app.component.css'
