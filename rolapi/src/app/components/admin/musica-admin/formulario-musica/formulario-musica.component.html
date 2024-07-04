@@ -1,1 +1,14 @@
-<p>formulario-musica works!</p>
+<form [formGroup]="formMusica" (ngSubmit)="sendFormMusica()">
+    <div class="mb-3">
+        <label for="txtMusica" class="form-label">Nombre Canción</label>
+        <input type="text" class="form-control" id="txtMusica" formControlName="nombre">
+    </div>
+    <div class="mb-3">
+        <label for="txtMusica" class="form-label">Url</label>
+        <input type="text" class="form-control" id="txtMusica" formControlName="link">
+    </div>
+
+    <div class="d-flex justify-content-end">
+        <button type="submit" class="btn btn-primary">Enviar</button>
+    </div>
+</form>
