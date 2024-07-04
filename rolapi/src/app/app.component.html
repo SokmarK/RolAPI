@@ -1,1 +1,17 @@
-<router-outlet></router-outlet>
+<section>
+
+    <div id="div-card" class="row">
+        <div class="col-3 scroll-sidebar">
+            <app-side-bar-scroll></app-side-bar-scroll>
+        </div>
+
+        <div class="col-8 scroll-body">
+            <router-outlet/>
+        </div>
+        <div class="col-1">
+            <app-offcanvas></app-offcanvas>
+        </div>
+    </div>
+
+</section>
+
