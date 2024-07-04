@@ -225,6 +225,17 @@
 #div-card-api {
     height: 80vh !important;
     background: #41523f;
+
+}
+
+.hover-items{
+    transition: transform 0.3s ease;
+}
+
+.hover-items:hover{
+    opacity: 90%;
+    transform: scale(0.9);
+    z-index: 1;
 }
 
 #list-item-1 {

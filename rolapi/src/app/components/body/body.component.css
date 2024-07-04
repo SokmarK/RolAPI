@@ -18,7 +18,13 @@
     height: fit-content;
 }
 
+.img-hover {
+    transition: transform 0.3s ease;
 
+}
 
-
-
+.img-hover:hover {
+    opacity: 90%;
+    transform: scale(0.9);
+    z-index: 1;
+}
