@@ -20,5 +20,8 @@ export const routes: Routes = [
     { path: "genero-vallenato", component: ChildVallenatoComponent },
     { path: "artistas-admin", component: ArtistasAdminComponent },
     { path: "generos-admin", component: GenerosAdminComponent },
-    { path : "musica-admin", component : MusicaAdminComponent}
+    { path: "musica-admin", component: MusicaAdminComponent },
+    { path: "login", component: LoginComponent },
+    { path: "header", component: HeaderComponent },
+    { path: "registro", component: RegistroComponent }
 ];
