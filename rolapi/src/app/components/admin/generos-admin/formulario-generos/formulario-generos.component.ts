@@ -32,7 +32,7 @@ export class FormularioGenerosComponent {
     }
 
     enviarFormulario(){
-        if(this.formGenero.valid){
+        if(this.formGenero.valid ){
             this._apiService.postGenero(this.formGenero.value).subscribe((data:any) => {
                 Swal.fire({
                     title: 'Cree un nuevo género',
@@ -58,6 +58,7 @@ export class FormularioGenerosComponent {
             this.formGenero.get('nombre')?.setValue(data.nombre);
         })
     }
+
 
 
 

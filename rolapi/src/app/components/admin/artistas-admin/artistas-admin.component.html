@@ -12,11 +12,14 @@
 </div>
 
 
-<table class="table">
+<table class="table rounded-3 mt-4">
     <thead>
         <tr>
             <th scope="col">Nombre</th>
-            <th scope="col">Acciones</th>
+            <th scope="col">Edad</th>
+            <th scope="col">País</th>
+            <th scope="col">Nombre artista</th>
+            <th scope="col">Ajustes</th>
         </tr>
     </thead>
     <tbody>
@@ -27,25 +30,25 @@
             <td>{{artistaInfo.pais}}</td>
             <td>{{artistaInfo.nombre_artista}}</td>
             <td>
-                <button>Editar</button>
-                <button>Eliminar</button>
+                <button data-bs-toggle="modal"  data-bs-target="#exampleModal" (click)="alimentarFormulario(artistaInfo._id)">Editar</button>
+                <button data-bs-toggle="modal" data-bs-target="#eliminar" (click)="eliminarArtista(artistaInfo._id)">Eliminar</button>
             </td>
         </tr>
         }
 
     </tbody>
 </table>
-
+ff
 
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Ingresar Artista</h1>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <app-formulario-artistas></app-formulario-artistas>
+                <app-formulario-artistas [idArtista]="idConsulta"></app-formulario-artistas>
             </div>
         </div>
     </div>

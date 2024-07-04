@@ -3,6 +3,19 @@
     height: 450px;
     background: #717575;
     margin-left: 60px;
+    transition: transform 0.3s ease;
+}
+
+#mp3:hover {
+    opacity: 90%;
+    transform: scale(0.9);
+    z-index: 1;
+}
+
+.img-hover:hover {
+    opacity: 90%;
+    transform: scale(0.9);
+    z-index: 1;
 }
 
 .offcanvas-img{

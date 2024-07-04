@@ -3,7 +3,7 @@ let MusicaClass = require('../models/musica.model')
 exports.crearCancion = async(req, res) => {
     try {
         let canciondata = new MusicaClass(req.body)
-        await cancionData.save()
+        await canciondata.save()
         res.status(200).send(canciondata)
     } catch (error) {
         console.log(error);
@@ -20,6 +20,17 @@ try {
     res.status(500).send({msg : `Hubo un problema al consultar las canciones. Error : ${error}`})
 }
 }
+exports.consultarMusicaXGenero = async(req,res) =>{
+try {
+    let cancionData = await MusicaClass.find({genero: req.params.nombreGenero})
+    res.status(200).send(cancionData)
+} catch (error) {
+    console.log(error);
+    res.status(500).send({msg : `Hubo un problema al consultar las canciones. Error : ${error}`})
+}
+}
+
+
 
 
 exports.consultarUnaCancion = async(req,res) =>{

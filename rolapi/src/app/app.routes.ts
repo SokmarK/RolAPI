@@ -12,6 +12,7 @@ import { ArtistasAdminComponent } from './components/admin/artistas-admin/artist
 import { GenerosAdminComponent } from './components/admin/generos-admin/generos-admin.component';
 import { ReggaeComponent } from './components/reggae/reggae.component';
 import { SearchComponent } from './components/search/search.component';
+import { MusicaAdminComponent } from './components/admin/musica-admin/musica-admin.component';
 
 export const routes: Routes = [
     { path: "", component: LoginComponent },
@@ -32,8 +33,11 @@ export const routes: Routes = [
     { 
         path: "body", component: BodyComponent
     },
-    { path: "generos-admin", component: GenerosAdminComponent },
-    { path: "generos-admin", component: GenerosAdminComponent },
     { path : "reggae", component: ReggaeComponent},
-    { path: "search", component: SearchComponent}
+    { path: "search", component: SearchComponent},
+    { path: "generos-admin", component: GenerosAdminComponent },
+    { path: "musica-admin", component: MusicaAdminComponent },
+    { path: "login", component: LoginComponent },
+    { path: "header", component: HeaderComponent },
+    { path: "registro", component: RegistroComponent }
 ];

@@ -15,25 +15,24 @@
 	width: 100%;
 	height: 100%;
 	background-color: var(--color-body);
+    overflow-y: auto;
 }
 
 .conta{
 	padding-bottom: 10px;
 	display: flex;
 	background-color: transparent;
-	margin-top: 100px;
-	margin-left: 40%;
+	margin-top: 50px;
+	margin-left: 30%;
 }
 
 #borde_registro{
 	border: 2px solid var(--color-borde);
-	border-top-left-radius:170px ;
-	border-top-right-radius:170px ;
-	padding: 70px 25px 12px 25px;
+    width: 500px;
 }
 
 .form_margin_registro{
-	padding-bottom: 2%;
+	margin-bottom: 24px;
 }
 
 #p_registro{
@@ -49,26 +48,18 @@
 	background-color: var(--color-botton-fondo);
 	padding: 5px 10px 10px 10px;
 	text-decoration: none;
-	border-top-left-radius: 50px;
-	border-top-right-radius: 50px;
-	border-bottom-left-radius: 50px;
-	border-bottom-right-radius: 50px;
+
 }
 
 input {
 	padding: 10px 100px 10px 10px;
-	border-top-left-radius: 50px;
-	border-top-right-radius: 50px;
-	border-bottom-left-radius: 50px;
-	border-bottom-right-radius: 50px;
+    border-radius: 10px;
+
 }
 
 .borde-radius {
 	padding: 10px;
-	border-top-left-radius: 50px;
-	border-top-right-radius: 50px;
-	border-bottom-left-radius: 50px;
-	border-bottom-right-radius: 50px;
+
 }
 
 select {

@@ -20,6 +20,7 @@ router.delete('/Borrar-Genero/:id', generoController.borrarGenero)
 
 router.post('/Crear-Musica', musicaController.crearCancion)
 router.get('/Buscar-Musica/:id', musicaController.consultarUnaCancion)
+router.get('/Buscar-x-genero/:nombreGenero', musicaController.consultarMusicaXGenero)
 router.get('/Listar-Canciones', musicaController.consultarCanciones)
 router.put('/Actualizar-Cancion/:id', musicaController.actualizarCancion)
 router.delete('/Borrar-Musica/:id', musicaController.borrarCancion)
