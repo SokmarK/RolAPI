@@ -20,6 +20,17 @@ try {
     res.status(500).send({msg : `Hubo un problema al consultar las canciones. Error : ${error}`})
 }
 }
+exports.consultarMusicaXGenero = async(req,res) =>{
+try {
+    let cancionData = await MusicaClass.find({genero: req.params.nombreGenero})
+    res.status(200).send(cancionData)
+} catch (error) {
+    console.log(error);
+    res.status(500).send({msg : `Hubo un problema al consultar las canciones. Error : ${error}`})
+}
+}
+
+
 
 
 exports.consultarUnaCancion = async(req,res) =>{

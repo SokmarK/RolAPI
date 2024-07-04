@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { FormularioGenerosComponent } from './formulario-generos/formulario-generos.component';
 import { ServicesService } from '../../../services/services.service';
 import Swal from 'sweetalert2'
+import { Router } from '@angular/router';
 
 @Component({
     selector: 'app-generos-admin',
@@ -16,13 +17,17 @@ export class GenerosAdminComponent {
 
     dataGeneros:any
     idConsulta: any = ""
+    esAdminis:any
 
-    constructor(private _apiService: ServicesService){
-
+    constructor(private _apiService: ServicesService, private route: Router){
     }
 
     ngOnInit():void{
         this.consultarInfo()
+        this.esAdminis = this._apiService.verficarRol()
+        if (!this.esAdminis) {
+            this.route.navigate(["/"])
+        }
     }
 
     consultarInfo(){
@@ -32,10 +37,8 @@ export class GenerosAdminComponent {
         })
     }
 
-
-    alimentarFormulario(id: string) {
+    alimentarFormulario(id:any){
         this.idConsulta = id
-
     }
 
 

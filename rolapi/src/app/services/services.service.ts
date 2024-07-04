@@ -12,7 +12,7 @@ import { Observable } from 'rxjs';
 export class ServicesService {
 
     urlAPI = environment.baseApiUrl
-    esAdmin:any = true
+    esAdmin:any = false
 
     /** Artista */
 
@@ -74,6 +74,9 @@ export class ServicesService {
 
     getMusica(id: string): Observable<any> {
         return this.http.get(`${this.urlAPI}/Buscar-Musica/${id}`)
+    }
+    getMusicaXGenero(nombreGenero: string): Observable<any> {
+        return this.http.get(`${this.urlAPI}/Buscar-x-genero/${nombreGenero}`)
     }
     getCancion() {
         return this.http.get(`${this.urlAPI}/Listar-Canciones`)
