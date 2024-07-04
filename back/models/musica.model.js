@@ -10,6 +10,11 @@ const musicaSchema = mongoose.Schema({
     link: {
         type: String,
         required: true
+    },
+
+    genero:{
+        type: String,
+        required: true
     }
 
 },
