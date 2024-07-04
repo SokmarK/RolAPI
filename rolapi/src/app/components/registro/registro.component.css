@@ -22,19 +22,17 @@
 	padding-bottom: 10px;
 	display: flex;
 	background-color: transparent;
-	margin-top: 100px;
-	margin-left: 40%;
+	margin-top: 50px;
+	margin-left: 30%;
 }
 
 #borde_registro{
 	border: 2px solid var(--color-borde);
-	border-top-left-radius:170px ;
-	border-top-right-radius:170px ;
-	padding: 70px 25px 12px 25px;
+    width: 500px;
 }
 
 .form_margin_registro{
-	padding-bottom: 2%;
+	margin-bottom: 24px;
 }
 
 #p_registro{
@@ -47,30 +45,22 @@
 #btn-registro{
 	margin-left: 32%;
 	color: var(--color-texto);
-	padding: 5px 10px 10px 10px;
+
 	text-decoration: none;
-	border-top-left-radius: 50px;
-	border-top-right-radius: 50px;
-	border-bottom-left-radius: 50px;
-	border-bottom-right-radius: 50px;
+
 }
 
 input {
 	padding: 10px 100px 10px 10px;
-	border-top-left-radius: 50px;
-	border-top-right-radius: 50px;
-	border-bottom-left-radius: 50px;
-	border-bottom-right-radius: 50px;
+    border-radius: 10px;
+
 }
 
 .borde-radius {
 	padding: 10px;
-	border-top-left-radius: 50px;
-	border-top-right-radius: 50px;
-	border-bottom-left-radius: 50px;
-	border-bottom-right-radius: 50px;
+
 }
 
-select {
-	padding-bottom: 10px;
+.form-select{
+    width: 300px;
 }

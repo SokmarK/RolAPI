@@ -24,11 +24,11 @@
 	display: flex;
 	background-color: transparent;
 	margin-top: 100px;
-	margin-left: 35%;
+	margin-left: 33%;
 }
 
 #borde-login{
-	border: 2px solid var(--color-borde);
+	border: 5px solid #41523f;
 	padding:50px;
 
 }
@@ -44,6 +44,21 @@ p{
 	color: var(--color-texto);
 }
 
+a{
+    text-decoration: none;
+    color: #162014;
+
+}
+
+.btn-hover{
+    transition: transform 0.3s ease;
+}
+
+.btn-hover:hover{
+    opacity: 90%;
+    transform: scale(1.1);
+    z-index: 1;
+}
 
 
 
