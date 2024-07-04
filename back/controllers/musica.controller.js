@@ -3,7 +3,7 @@ let MusicaClass = require('../models/musica.model')
 exports.crearCancion = async(req, res) => {
     try {
         let canciondata = new MusicaClass(req.body)
-        await cancionData.save()
+        await canciondata.save()
         res.status(200).send(canciondata)
     } catch (error) {
         console.log(error);
