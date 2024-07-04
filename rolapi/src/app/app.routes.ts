@@ -10,6 +10,8 @@ import { RegistroComponent } from './components/registro/registro.component';
 import { HeaderComponent } from './components/header/header.component';
 import { ArtistasAdminComponent } from './components/admin/artistas-admin/artistas-admin.component';
 import { GenerosAdminComponent } from './components/admin/generos-admin/generos-admin.component';
+import { ReggaeComponent } from './components/reggae/reggae.component';
+import { SearchComponent } from './components/search/search.component';
 
 export const routes: Routes = [
     { path: "", component: LoginComponent },
@@ -30,5 +32,8 @@ export const routes: Routes = [
     { 
         path: "body", component: BodyComponent
     },
-    { path: "generos-admin", component: GenerosAdminComponent }
+    { path: "generos-admin", component: GenerosAdminComponent },
+    { path: "generos-admin", component: GenerosAdminComponent },
+    { path : "reggae", component: ReggaeComponent},
+    { path: "search", component: SearchComponent}
 ];
