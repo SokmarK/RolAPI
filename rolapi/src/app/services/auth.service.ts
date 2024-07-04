@@ -11,4 +11,8 @@ export class AuthService {
   guardarUsuario(user:any) {
     return this.http.post<any>("http://localhost:3000/api/usuarios/crear", user);
   }  
+
+  login(userCredential:any){
+    return this.http.post<any>("http://localhost:3000/api/usuarios/login",userCredential);
+  }
 }

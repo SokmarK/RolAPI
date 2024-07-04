@@ -27,5 +27,8 @@ export const routes: Routes = [
     { path: "genero-popular", component: ChildPopularComponent },
     { path: "genero-vallenato", component: ChildVallenatoComponent },
     { path: "artistas-admin", component: ArtistasAdminComponent },
+    { 
+        path: "body", component: BodyComponent
+    },
     { path: "generos-admin", component: GenerosAdminComponent }
 ];

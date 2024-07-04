@@ -4,12 +4,12 @@
             <div id="borde-login">
                 <p>Login</p>
                 <form class="form_margin">
-                    <input type="email" name="email" placeholder="Email" required />
+                    <input type="email" name="email" placeholder="Email" required [(ngModel)]="email"/>
                 </form>
                 <form class="form_margin">
-                    <input type="password" name="pswd" placeholder="Password" required/>
+                    <input type="password" name="pswd" placeholder="Password" required [(ngModel)]="password" />
                 </form>
-                <button class="btn-inicio-crearCuenta btn-inicio-sesion" routerLink=""><a href=""><b>Iniciar Sesion</b></a></button>                    
+                <button class="btn-inicio-crearCuenta btn-inicio-sesion" (click)="verificarUsuarios()"><b>Iniciar Sesion</b></button>                    
                 <button class="btn-inicio-crearCuenta separacion-btn" routerLink="registro"><a href="registro"><b>Crear cuenta</b></a></button>
             </div> 
         </div>
