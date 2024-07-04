@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ServicesService } from '../../../services/services.service';
 import { FormularioMusicaComponent } from './formulario-musica/formulario-musica.component';
-
+import Swal from 'sweetalert2'
 @Component({
     selector: 'app-musica-admin',
     standalone: true,
@@ -15,7 +15,7 @@ export class MusicaAdminComponent implements OnInit {
 
 
     dataMusica: any
-
+    
 
     constructor(private _apiService: ServicesService) {
 
@@ -35,5 +35,7 @@ export class MusicaAdminComponent implements OnInit {
         })
 
     }
+
+
 
 }

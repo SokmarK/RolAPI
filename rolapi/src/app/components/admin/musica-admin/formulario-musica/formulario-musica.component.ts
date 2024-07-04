@@ -14,13 +14,15 @@ import { ServicesService } from '../../../../services/services.service';
 })
 export class FormularioMusicaComponent {
 
+   
     formMusica: FormGroup
 
 
     constructor(private fb: FormBuilder, private _apiService: ServicesService) {
         this.formMusica = this.fb.group({
             nombre: ["", [Validators.required]],
-            link: ["", [Validators.required]]
+            link: ["", [Validators.required]],
+            genero :["" , [Validators.required]]
         })
     }
 
